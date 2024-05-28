@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ttrpyg"
+version = "0.1"
+description = "TTRPG utilities in Python"
+requires-python = ">= 3.10"
+dependencies = [
+    "pylatex","python-dotenv","PyYAML","mypy" 
+    #not 100% that this is accurate! should find a way to auto-generate this
+]
