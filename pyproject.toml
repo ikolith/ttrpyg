@@ -11,3 +11,7 @@ dependencies = [
     "pylatex","python-dotenv","PyYAML","mypy" 
     #not 100% that this is accurate! should find a way to auto-generate this
 ]
+
+[tool.setuptools]
+packages = ["ttrpyg"]
+
