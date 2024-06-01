@@ -11,14 +11,14 @@ import ttrpyg.dice_utils as du
 
 
 class DB(TinyDB):
-    def __init__(self, input_path: str = "./source", output_path: str = "db.json"):
+    def __init__(self, input_path: str = "./entities", output_path: str = "db.json"):
         super().__init__(output_path)
         self.input_path = input_path
         self.output_path = output_path
         self._create_tinydb(input_path, output_path)
 
     def _create_tinydb(
-        self, input_path: str = "./source", output_path: str = "db.json"
+        self, input_path: str = "./entities", output_path: str = "db.json"
     ):
         """This function creates a flattened TinyDB db.
         !!! You should NOT write to this db !!!
