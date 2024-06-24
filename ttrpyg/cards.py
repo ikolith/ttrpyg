@@ -54,13 +54,12 @@ def generate_cards(
             "paperwidth": "5in",
             "paperheight": "3in",
             "top": "0.1in",
-            "left": "0.1in",
+            "left": "0.125in",
             "bottom": "0in",
             "right": "0in",
         }
     else:
         geometry_options = {"margin": ".07in"}
-
 
     # define the LaTex command to generate a minipage of given dimensions, and populate it with content
     class CardCommand(CommandBase):
@@ -68,7 +67,7 @@ def generate_cards(
 
     if card_type == "double_notecard":
         minipage = (
-            NoEscape(r"\begin{minipage}[t][#1][t]{#2} #3 \end{minipage}\hspace{0.1in}"),
+            NoEscape(r"\begin{minipage}[t][#1][t]{#2} #3 \end{minipage}\hspace{0.2in}"),
         )
     else:
         minipage = (
